@@ -1,0 +1,27 @@
+POST http://localhost:3000/api/users/create
+content-type: application/json
+
+{
+    "firstName":"firstName",
+    "lastName":"lastName",
+    "email":"test112@mail.com",
+    "password": "password123",
+    "role": 1
+}
+
+###
+PUT http://localhost:3000/api/users/update
+content-type: application/json
+
+{
+    "id":"1540ecc5-f817-4f2b-b6b8-ad50a86d1b16",
+    "email":"test1wqeqwe@mail.com",
+    "password": "password123"
+}
+
+###
+DELETE  http://localhost:3000/api/users/delete?id=1540ecc5-f817-4f2b-b6b8-ad50a86d1b161
+
+###
+GET  http://localhost:3000/api/users/find-user?id=58dd69c1-23c5-448e-b139-651fa88ba6b42
+content-type: application/json
